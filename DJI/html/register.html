@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+
+    <link rel="stylesheet" href="../css/login-register/register.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../plug-in/swiper-master/package/swiper-bundle.min.css">
+    <script src="../plug-in/swiper-master/package/swiper-bundle.min.js"></script>
+    <script src="../plug-in/jquery/jquery.min.js"></script>
+    <script src="../plug-in/validation/dist/jquery.validate.min.js"></script>
+    <!-- 中文包↓ -->
+    <script src="../plug-in/validation/dist/localization/messages_zh.min.js"></script>
+    <script src="../js/ajax.js"></script>
+
+</head>
+
+<body>
+    <div class="box_out">
+        <!-- ===================================登录界面左边的轮播图=================================================================================================== -->
+        <div class="box_left">
+            <!-- 以下用swiper实现轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('https://account.djicdn.com/pc/static/img/1.e61fc72.jpg');">
+                        <!-- 大疆的logo -->
+                        <a href="../index.html"><img src="https://www1.djicdn.com/dps/e5f926c322d7fdf80eafe38a0d12000c.svg" alt=""></a>
+                        <div>渔夫收网</div>
+                        <div>©️ 郑戈</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('https://account.djicdn.com/pc/static/img/2.643c4c1.jpg');">
+                        <a href="../index.html"><img src="https://www1.djicdn.com/dps/e5f926c322d7fdf80eafe38a0d12000c.svg" alt=""></a>
+                        <div>天桥</div>
+                        <div>©️ 诚涵</div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('https://account.djicdn.com/pc/static/img/3.61f61fa.jpg');">
+                        <a href="../index.html"><img src="https://www1.djicdn.com/dps/e5f926c322d7fdf80eafe38a0d12000c.svg" alt=""></a>
+                        <div>探</div>
+                        <div>©️ 王汉冰</div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination swiper-pagination-white "></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+
+                <!-- 如果需要滚动条 -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+
+        <!-- ===================================注册界面右边的表单=================================================================================================== -->
+        <div class="box_right">
+            <div class="box_right_innerBox">
+                <a href="../index.html"><img src="https://www1.djicdn.com/dps/303ebb0010bed26e989b7d9966eb0c0b.svg" alt="" class="logo"></a>
+                <div class="title">注册</div>
+                <div class="register_type">
+                    <div class="register_type_tel">手机注册</div>
+                    <div class="register_type_Email">邮箱注册</div>
+                </div>
+                <!-- 手机注册板块1 ==================================================================================== -->
+                <div class="register_content_tel">
+                    <form id="register_tel1">
+                        <!-- 输入手机 -->
+                        <div class="tel_input">
+                            <div class="tel_input_left">+86</div>
+                            <div class="tel_input_right">
+                                <input type="text" placeholder="请输入手机号" name="telNumber" class="tel_number">
+                            </div>
+                        </div>
+                        <!-- 滑块 -->
+                        <div class="slide">
+                            <div class="slide_below"></div>
+                            <div class="text">请按住滑块，拖动到最右边</div>
+                            <div class="mask"></div>
+                            <div class="slide_over">
+                                <div class="tick">✔</div>
+                            </div>
+                            <div class="slide_alert">请按照提示操作</div>
+                        </div>
+                        <!-- 输入验证码 -->
+                        <div class="code">
+                            <input type="text" placeholder="信息验证码" name="code" class="code_input">
+                            <div class="code_text">发送验证码</div>
+                        </div>
+                        <!-- 下一步 -->
+                        <button class="next">
+                            下一步
+                        </button>
+                    </form>
+                    <!-- 立即登录 -->
+                    <div class="login_now"><a href="../login.html">立即登录</a></div>
+                    <!-- 注册遇到问题 -->
+                    <p class="text3">注册遇到问题？</p>
+                    <p class="text4">
+                        <a href="">联系客服 </a> |
+                        <a href=""> 常见问题</a>
+                    </p>
+                </div>
+
+                <!-- 手机注册板块2 ===========================================================================================-->
+                <div class="register_content_tel_2">
+                    <form class="register_tel_2">
+                        <input type="text" placeholder="密码" name="password" class="password2">
+                        <input type="text" placeholder="再次输入密码" name="re_password">
+                        <!-- 两个打勾 -->
+                        <div class="checkbox"><input type="checkbox">获取大疆最新产品、服务、软件升级等信息。</div>
+                        <div class="checkbox"><input type="checkbox" class="agreement">同意并愿意遵守大疆创新&nbsp;<a href="">隐私政策</a>&nbsp;和&nbsp;<a href="">使用条款</a>。</div>
+                        <!-- 提交 -->
+                        <button class="next submit" type="submit">提交</button>
+                    </form>
+                    <!-- 立即登录 -->
+                    <div class="login_now"><a href="../login.html">立即登录</a></div>
+                    <!-- 注册遇到问题 -->
+                    <p class="text3">注册遇到问题？</p>
+                    <p class="text4">
+                        <a href="">联系客服 </a> |
+                        <a href=""> 常见问题</a>
+                    </p>
+                </div>
+                <!-- 邮箱注册板块======================================================================================= -->
+                <div class="register_content_Email">
+                    <form id="register_Email">
+                        <!-- 邮箱 -->
+                        <input type="text" class="Email" placeholder="邮箱" name="Email">
+                        <!-- 密码 -->
+                        <input type="text" class="password" placeholder="密码" name="password">
+                        <!-- 再次输入密码 -->
+                        <input type="text" class="re_password" placeholder="再次输入密码" name="re_password">
+                        <!-- 滑块 -->
+                        <div class="slide">
+                            <div class="slide_below"></div>
+                            <div class="text">请按住滑块，拖动到最右边</div>
+                            <div class="mask"></div>
+                            <div class="slide_over">
+                                <div class="tick">✔</div>
+                            </div>
+                            <div class="slide_alert">请按照提示操作</div>
+                        </div>
+                        <!-- 两个打勾 -->
+                        <div class="checkbox"><input type="checkbox">获取大疆最新产品、服务、软件升级等信息。</div>
+                        <div class="checkbox"><input type="checkbox" class="agreement">同意并愿意遵守大疆创新&nbsp;<a href="">隐私政策</a>&nbsp;和&nbsp;<a href="">使用条款</a>。</div>
+                        <!-- 提交 -->
+                        <button class="next submit" type="submit">
+                            提交
+                        </button>
+                    </form>
+                    <!-- 立即登录 -->
+                    <div class="login_now"><a href="../login.html">立即登录</a></div>
+                    <!-- 注册遇到问题 -->
+                    <p class="text3">注册遇到问题？</p>
+                    <p class="text4">
+                        <a href="">联系客服 </a> |
+                        <a href=""> 常见问题</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../js/register.js"></script>
+
+
+</body>
+
+</html>

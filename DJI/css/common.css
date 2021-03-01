@@ -1,0 +1,104 @@
+@charset "utf-8";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+span,
+p,
+img,
+form,
+input,
+label,
+select,
+option,
+textarea,
+button,
+table,
+td,
+tr,
+i,
+b,
+em,
+strong,
+u,
+br {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 继承可视窗口高度 */
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* 去除列表默认的列表项 */
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+
+/*去除超链接的默认样式 */
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* 解决图片存在的bug */
+
+img {
+    border: 0;
+    /* 在IE9以下浏览器中，如果是a标签包裹的img，则会出现边框线*/
+    display: block;
+    /* 块状元素包裹img，在块状元素的底部会多出3像素左右的间距*/
+}
+
+
+/* 万能清除法 （解决高度塌陷的问题）*/
+
+.clear_fix::after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+
+/* 去除文字默认的样式 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}

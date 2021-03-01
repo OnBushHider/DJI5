@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/car/car.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../plug-in/bootstrap/css/bootstrap.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../plug-in/swiper-master/package/swiper-bundle.min.css">
+    <script src="../plug-in/swiper-master/package/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="../plug-in/jquery/jquery.min.js"></script>
+    <!-- 引入pAjax -->
+    <script src="../js/ajax.js"></script>
+    <!-- 引入cookie.js -->
+    <script src="../js/cookie.js"></script>
+</head>
+
+<body>
+    <!-- =========================头部 head================================== -->
+    <div class="head">
+        <div class="head_content">
+            <div class="head_content_1">
+                <a href="../index.html">
+                    <img src="https://www1.djicdn.com/dps/303ebb0010bed26e989b7d9966eb0c0b.svg" alt="">
+                </a>
+                <a href="../index.html">商城</a>
+            </div>
+
+            <div class="head_content_2">
+                <ul>
+                    <li><a href="">商品分类&nbsp; <span class="glyphicon glyphicon-menu-down"></span></a></li>
+                    <li><a href="">以旧换新</a></li>
+                    <li><a href="">购机指南</a></li>
+                    <li><a href="">DJI 大疆商城 APP</a></li>
+                </ul>
+            </div>
+
+            <div class="head_content_3">
+                中国大陆(简体中文/￥CNY)
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================通知栏alert=================================== -->
+    <div class="alert"></div>
+
+    <!-- ====================巨幕 hugescreen=================================== -->
+    <div class="hugescreen">
+        我的购物车<a href="../index.html">继续购物</a>
+
+    </div>
+
+    <!-- =========================内容 content================================== -->
+    <div class="container" id="container">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" class="allChecked"> 全选
+                    </label>
+                    <div class="panel_right">
+
+                        商品种类
+                        <span class="badge species">1</span> 所选商品数量
+                        <span class="badge number">3</span>
+
+                    </div>
+                </h3>
+            </div>
+
+            <div class="panel-body">
+
+                <!-- <div class="media">
+                    <div class="media-left">
+                        <input type="checkbox">
+                        <img class="media-object" style="width: 100px;" src="https://product3.djicdn.com/uploads/sku/cover/42012c5b39b2849c8a54604bff746101@small.png" alt="...">
+                    </div>
+                    <div class="media-body">
+                        <div class="media_body_left">
+                            <h4 class="media-heading">大疆迷你小背包 (黑)</h4>
+                            <div class="sent">
+                                <span>发货时间：订单付款后1个工作日。</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            价格￥39
+                        </div>
+                        <div class="media_body_center">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default reduce">-</button>
+                                <button type="button" class="btn btn-default">1</button>
+                                <button type="button" class="btn btn-default add">+</button>
+                            </div>
+                        </div>
+                        <div class="media_body_right">
+                            <span class="item_total">小计:￥23</span>
+                            <span class="glyphicon glyphicon-remove del"></span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="empty">空空如也! <a href="../html/homePage.html">去购物</a></div> -->
+
+            </div>
+
+            <div class="panel-footer">
+                <span>总价格:￥<span class="total"></span></span>
+                <button class="btn btn-info settlement">结算</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="../js/car.js"></script>
+</body>
+
+</html>

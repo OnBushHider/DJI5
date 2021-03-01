@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/detail/detail.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../plug-in/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plug-in/swiper-master/package/swiper-bundle.min.css">
+    <script src="../plug-in/swiper-master/package/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="../plug-in/jquery/jquery.min.js"></script>
+    <!-- 引入pAjax -->
+    <script src="../js/ajax.js"></script>
+    <script src="../js/cookie.js"></script>
+</head>
+
+<body>
+    <!-- =========================页头 header================================== -->
+    <div class="header">
+        <div class="header_content">
+            <div class="header_content_1">
+                <a href="">DJI 大疆官网</a>
+            </div>
+
+            <div class="header_content_2">
+                满 ¥99 顺丰包邮。热门主机使用花呗，京东白条和招行分期最高可享 3 期免息，下单即享 1% DJI币返点。
+            </div>
+
+            <div class="header_content_3">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <span class="car"><a href="./car.html">购物车</a></span>
+                <span class="shopping_number"></span> &nbsp;&nbsp;
+                <span>| &nbsp;
+            <a href="../login.html" class="header_login">登录</a> &nbsp;
+            | &nbsp;
+            <a href="./register.html" class="header_register">注册</a> &nbsp;
+            | &nbsp;
+            <a href="">中国大陆(简体中文/￥CNY)</a></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================搜索栏 search================================== -->
+    <div class="search">
+        <div class="search_content">
+            <div class="search_content_1">
+                <a href="../index.html">
+                    <img src="https://www1.djicdn.com/dps/303ebb0010bed26e989b7d9966eb0c0b.svg" alt="">
+                </a>
+                <a href="../index.html">商城</a>
+            </div>
+
+            <div class="search_content_2">
+                <ul>
+                    <li><a href="">商品分类&nbsp; <span class="glyphicon glyphicon-menu-down"></span></a></li>
+                    <li><a href="">以旧换新</a></li>
+                    <li><a href="">购机指南</a></li>
+                    <li><a href="">DJI 大疆商城 APP</a></li>
+                </ul>
+            </div>
+
+            <div class="search_content_3">
+                <div class="search_content_3_input">
+                    <input type="text" placeholder="搜索商品...">
+                </div>
+                <div class="search_content_3_button">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================详情内容 detail================================== -->
+    <div class="detail">
+        <div class="detail_content">
+            <!-- 左边图片展示 -->
+            <div class="img_outbox">
+                <div class="big_img_box">
+                    <!-- <img src="//product4.djicdn.com/uploads/carousel/image/96fa1f3f8f040798f792b1600a80b1e3@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/3c79a2e819cf7239587cc062f0da64e2@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/748df6a18342503ab590b931327b10d9@ultra.jpg" alt="">
+                    <img src="//product1.djicdn.com/uploads/carousel/image/3c6bac65077972b3584e855dbe3e85d1@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/1f50ce8b01a883d94fb6a5198fbcfeb6@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/ca5dea0049858e1e1e7f545e3c80770c@ultra.jpg" alt=""> -->
+                </div>
+                <div class="small_img_box">
+                    <!-- <img src="//product4.djicdn.com/uploads/carousel/image/96fa1f3f8f040798f792b1600a80b1e3@ultra.jpg" alt="" class="active">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/3c79a2e819cf7239587cc062f0da64e2@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/748df6a18342503ab590b931327b10d9@ultra.jpg" alt="">
+                    <img src="//product1.djicdn.com/uploads/carousel/image/3c6bac65077972b3584e855dbe3e85d1@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/1f50ce8b01a883d94fb6a5198fbcfeb6@ultra.jpg" alt="">
+                    <img src="//product4.djicdn.com/uploads/carousel/image/ca5dea0049858e1e1e7f545e3c80770c@ultra.jpg" alt=""> -->
+                    <!-- <span class="glyphicon glyphicon-play">产品介绍</span>
+                    <span class="glyphicon glyphicon-sound-dolby"> 3D</span> -->
+                </div>
+            </div>
+            <!-- 右边产品信息 -->
+            <div class="information_outbox">
+                <!-- <p class="information_name">DJI Mini 2</p>
+                <p class="information_price">¥2899</p>
+                <p class="information_payway">低至 ¥966.33/月 x 3 期免息，支持花呗分期、京东白条、掌上生活分期付款</p>
+                <section class="information_describe">
+                    <ul>
+                        <li>＜249g</li>
+                        <li>4K/30fps 视频</li>
+                        <li>10 公里高清图传</li>
+                        <li>最大抗风等级 5 级</li>
+                        <li>4 倍变焦</li>
+                        <li>手机快传</li>
+                    </ul>
+                </section>
+                <p class="information_concept "><a href="">产品概览</a>></p>
+
+                <p class="information_expressage"><span class="glyphicon glyphicon-plane"></span>&nbsp;&nbsp;顺丰包邮</p>
+                <p class="information_activity"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;单笔订单可返还订单金额 1% DJI 币，用于支付下一次订单</p>
+                <p class="information_return"><span class="glyphicon glyphicon-transfer"></span>&nbsp;&nbsp;支持 7 天无理由退换货</p> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===========================加入购物车========================= -->
+    <div class="addCar">
+        <div class="addCar_content">
+            <div class="addCar_content_text">
+                <!-- <p>
+                    <span>¥2899</span>
+                    <span>或低至 ¥966.33/月 × 3 期免息</span>
+                </p>
+                <p>订单付款后1个工作日发货。</p> -->
+            </div>
+            <div class="addCar_content_button">
+                添加到购物车
+                <div class="addOne">+1</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/detail.js"></script>
+</body>
+
+</html>

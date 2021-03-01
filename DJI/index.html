@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/homePage/homePage.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./plug-in/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./plug-in/swiper-master/package/swiper-bundle.min.css">
+    <script src="./plug-in/swiper-master/package/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="./plug-in/jquery/jquery.min.js"></script>
+    <!-- 引入pAjax -->
+    <script src="./js/ajax.js"></script>
+    <script src="./js/cookie.js"></script>
+</head>
+
+<body>
+    <!-- =========================页头 header================================== -->
+    <div class="header">
+        <div class="header_content">
+            <div class="header_content_1">
+                <a href="">DJI 大疆官网</a>
+            </div>
+
+            <div class="header_content_2">
+                满 ¥99 顺丰包邮。热门主机使用花呗，京东白条和招行分期最高可享 3 期免息，下单即享 1% DJI币返点。
+            </div>
+
+            <div class="header_content_3">
+                <!-- <span class="glyphicon glyphicon-shopping-cart"></span>
+                <span class="car"><a href="./html/car.html">购物车</a></span>
+                <span class="shopping_number"></span> &nbsp;&nbsp;
+                <span>| &nbsp; -->
+
+                <!-- 未登录时 -->
+                <!-- <a href="./login.html">登录</a> &nbsp;
+                    | &nbsp;
+                    <a href="./html/register.html">注册</a> &nbsp;
+                    | &nbsp; -->
+                <!-- 已登录时 -->
+                <!-- <a href="./login.html">您好,547913725@qq.com</a> &nbsp;
+                    | &nbsp;
+                    <a href="./html/register.html">注销</a>  -->
+
+                <!-- &nbsp; | &nbsp;
+                    <a href="">中国大陆(简体中文/￥CNY)</a></span> -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================搜索栏 search================================== -->
+    <div class="search">
+        <div class="search_content">
+            <div class="search_content_1">
+                <a href="">
+                    <img src="https://www1.djicdn.com/dps/303ebb0010bed26e989b7d9966eb0c0b.svg" alt="">
+                </a>
+                <a href="">商城</a>
+            </div>
+
+            <div class="search_content_2">
+                <ul>
+                    <li><a href="">商品分类&nbsp; <span class="glyphicon glyphicon-menu-down"></span></a></li>
+                    <li><a href="">以旧换新</a></li>
+                    <li><a href="">购机指南</a></li>
+                    <li><a href="">DJI 大疆商城 APP</a></li>
+                </ul>
+            </div>
+
+            <div class="search_content_3">
+                <div class="search_content_3_input">
+                    <input type="text" placeholder="搜索商品...">
+                </div>
+                <div class="search_content_3_button">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================导航栏 navigation================================== -->
+    <div class="navigation">
+        <div class="navigation_content">
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/48c26180-9980-0136-3e40-12528100fbe3/mavic2.svg" alt="">
+                </div>
+                <p>御 Mavic</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/c55279e0-d39c-0136-af8a-1237445f15bc/ic-Tiny-70x56.svg" alt="">
+                </div>
+                <p>灵眸 Osmo</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/769872f0-9980-0136-ac89-1237445f15bc/phantom.svg" alt="">
+                </div>
+                <p>精灵 Phantom</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/de75be6aa8725b0d70b9f367a36381e6.svg" alt="">
+                </div>
+                <p>如影 Ronin</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/53e4f4dd7d74f6ee7bff1ccd8b54cc86.svg" alt="">
+                </div>
+                <p>机甲大师</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/aefb3853a22bc89a0726cdc0b83b8ba2.svg" alt="">
+                </div>
+                <p>DJI FPV</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/829c31f0-9980-0136-3e42-12528100fbe3/inspire.svg" alt="">
+                </div>
+                <p>悟 Inspire</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/c856e5d1f16c645fd71841008f1c2504.svg" alt="">
+                </div>
+                <p>行业应用</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/b22b91d0-997e-0136-ac83-1237445f15bc/tello.svg" alt="">
+                </div>
+                <p>睿炽科技丨特洛</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/b928d350-997e-0136-ac84-1237445f15bc/service.svg" alt="">
+                </div>
+                <p>增值服务</p>
+            </div>
+            <div>
+                <div>
+                    <img src="//stormsend1.djicdn.com/stormsend/uploads/6bf1b630-9980-0136-ac88-1237445f15bc/others.svg" alt="">
+                </div>
+                <p>创意周边</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================轮播图 banner================================== -->
+    <div class="banner">
+        <!-- 以下用swiper实现轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('//stormsend1.djicdn.com/stormsend/uploads/eea443b8730a1a4eeb6a2dbd943e7555.jpg');">
+                    <!-- 参照物 -->
+                    <div class="reference">
+                        <div class="font_black">
+                            <P>DJI MINI 2</P>
+                            <P>迷你易拍,眼界大开</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('//stormsend1.djicdn.com/stormsend/uploads/d668b29f661fc9967507b42121c174e7.jpg');">
+                    <!-- 参照物 -->
+                    <div class="reference">
+                        <div class="font_white">
+                            <P>DJI POCKET 2</P>
+                            <P>拍什么，都有一手</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('//stormsend1.djicdn.com/stormsend/uploads/66413ead4e287dff875181df6be0c317.jpg');">
+                    <!-- 参照物 -->
+                    <div class="reference">
+                        <div class="font_white">
+                            <P>DJI RS 2</P>
+                            <P>高手就位</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('//stormsend1.djicdn.com/stormsend/uploads/496c6830cc9a09fe964f50515dc47439.jpg');">
+                    <!-- 参照物 -->
+                    <div class="reference">
+                        <div class="font_white">
+                            <P>DJI RSC 2</P>
+                            <P>好戏翻倍</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('//stormsend1.djicdn.com/stormsend/uploads/a14baec2ccf8ffcb294e53c5fcc0c7f3.jpg');">
+                    <!-- 参照物 -->
+                    <div class="reference">
+                        <div class="font_black">
+                            <P>DJI OM 4</P>
+                            <P>拍出吸引力</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination swiper-pagination-white "></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+
+    <!-- 轮播图的js代码 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            effect: 'fade', //切换的方式
+            loop: true, //是否可以轮回
+
+            pagination: { //分页器的设置
+                el: '.swiper-pagination',
+                clickable: true, //是否可以点击
+            },
+            navigation: { //左右按钮的设置，颜色大小在style里改
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000, //延迟
+                stopOnLastSlide: false, //展示最后一张图片之后是否停止
+                disableOnInteraction: false, //鼠标操作之后是否停止
+            }
+        });
+
+        // 设置鼠标移入暂停自动轮播事件
+        swiper.el.onmouseover = function() {
+            swiper.autoplay.stop();
+        }
+
+        //鼠标离开开始自动切换
+        swiper.el.onmouseout = function() {
+            swiper.autoplay.start();
+        }
+    </script>
+
+    <!-- =========================中间三个商品 three_goods========================== -->
+    <div class="three_goods">
+        <div class="three_goods_content">
+
+        </div>
+    </div>
+
+    <!-- =========================随心续享服务service============================-->
+    <div class="survice">
+        <div class="survice_content">
+            <div class="survice_content_left">
+                <img src="//stormsend1.djicdn.com/stormsend/uploads/2795d46f3945c8c0e7b8f7af9dd572f7.jpg" alt="">
+                <div>
+                    <p>DJI Care 随心续享</p>
+                    <p>商城专属，双重保障</p>
+                </div>
+            </div>
+            <div class="survice_content_right">
+                <img src="//stormsend1.djicdn.com/stormsend/uploads/90badd9b7a75e194a2edc2e007507831.jpg" alt="">
+                <div>
+                    <p>DJI 以旧换新</p>
+                    <p>闲置电子设备，抵价换新机</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================商品 goods=============================== -->
+    <div class="goods">
+        <div class="goods_container">
+
+        </div>
+    </div>
+
+    <script src="./js/homePage.js"></script>
+</body>
+
+</html>
